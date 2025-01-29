@@ -47,7 +47,7 @@ function App() {
       <div className="cookie">
         <button onClick={() => setCount((count) => count + 1)}>
           <img
-            src="/cookie.png"
+            src={`${import.meta.env.BASE_URL}cookie.png`}
             alt="Image of a Cookie"
             width={200}
             height={200}
