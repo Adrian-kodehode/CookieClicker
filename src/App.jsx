@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import UsersComponent from "./UsersComponent.jsx";
+import cookieImage from "./assets/cookie.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -46,13 +47,7 @@ function App() {
       </div>
       <div className="cookie">
         <button onClick={() => setCount((count) => count + 1)}>
-          <img
-            src={`${import.meta.env.BASE_URL}cookie.png`}
-            alt="Image of a Cookie"
-            width={200}
-            height={200}
-            onError={() => console.log("Failed to load cookie image")}
-          />
+          <img src={cookieImage} alt="Cookie" width={200} height={200} />
         </button>
       </div>
       <div>
